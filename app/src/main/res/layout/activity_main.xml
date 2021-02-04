@@ -6,4 +6,37 @@
     android:paddingRight="16dp"
     android:orientation="vertical" >
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="Quantity"
+        android:textAllCaps="true"
+        android:layout_marginBottom="16dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="16sp"
+        android:id="@+id/quantity_text_view"
+        android:textColor="@android:color/black"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="order"
+        android:layout_marginTop="16dp"
+        />
+
+
+
+
+
+
+
+
 </LinearLayout>
