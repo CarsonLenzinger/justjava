@@ -17,6 +17,10 @@ import android.widget.TextView;
  */
 public class MainActivity extends AppCompatActivity {
 
+    /**
+     * Setting Global Quantity
+     */
+
     int quantity = 0;
 
     @Override
@@ -25,22 +29,27 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    /**
+     * This method has the quantity increase
+     * @param view
+     */
+
     public void increment(View view) {
         quantity++;
         display(quantity);
     }
 
-
-
-
+    /**
+     * This method allows for the quantity to be decreased but limits it to having to be greater or equal to 0 as its lowest quantity
+     * @param view
+     */
+    
 public void decrement(View view){
         if(quantity>0) {
             quantity--;
             display(quantity);
         }
 }
-
-
 
 
     /**
@@ -51,8 +60,6 @@ public void decrement(View view){
         display(quantity);
         displayPrice(coffeesOrdered * 5);
     }
-
-
 
 
 
