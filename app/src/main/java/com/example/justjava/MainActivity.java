@@ -16,18 +16,53 @@ import android.widget.TextView;
  * This app displays an order form to order coffee.
  */
 public class MainActivity extends AppCompatActivity {
+
+    /**
+     * Setting Global Quantity
+     */
+
+    int quantity = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
+    /**
+     * This method has the quantity increase
+     * @param view
+     */
+
+    public void increment(View view) {
+        quantity++;
+        display(quantity);
+    }
+
+    /**
+     * This method allows for the quantity to be decreased but limits it to having to be greater or equal to 0 as its lowest quantity
+     * @param view
+     */
+    
+public void decrement(View view){
+        if(quantity>0) {
+            quantity--;
+            display(quantity);
+        }
+}
+
+
     /**
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
-        display(2);
-        displayPrice(2 * 5);
+        int coffeesOrdered = quantity;
+        display(quantity);
+        displayPrice(coffeesOrdered * 5);
     }
+
+
+
     /**
      * This method displays the given quantity value on the screen.
      */
