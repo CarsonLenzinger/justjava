@@ -59,7 +59,7 @@ public void decrement(View view){
         // int coffeesOrdered = quantity;
         // display(quantity);
         // displayPrice(coffeesOrdered * 5);
-        String priceMessage = "Free";
+        String priceMessage = "Free, did she say, \"FREE!\""; //I used an escape sequence \" to include the quotes around free
         displayMessage(priceMessage);
     }
 
