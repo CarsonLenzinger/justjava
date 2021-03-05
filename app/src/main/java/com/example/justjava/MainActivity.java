@@ -56,9 +56,11 @@ public void decrement(View view){
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
-        int coffeesOrdered = quantity;
-        display(quantity);
-        displayPrice(coffeesOrdered * 5);
+        // int coffeesOrdered = quantity;
+        // display(quantity);
+        // displayPrice(coffeesOrdered * 5);
+        String priceMessage = "Free";
+        displayMessage(priceMessage);
     }
 
 
@@ -78,5 +80,15 @@ public void decrement(View view){
         TextView priceTextView = (TextView) findViewById(R.id.price_text_view);
         priceTextView.setText(NumberFormat.getCurrencyInstance().format(number));
     }
+    /**
+     * This method displays the given text on the screen.
+     */
+
+    private void displayMessage(String message) {
+        TextView priceTextView = (TextView) findViewById(R.id.price_text_view);
+        priceTextView.setText(message);
+
+    }
+
 }
 
