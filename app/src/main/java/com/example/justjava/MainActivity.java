@@ -56,10 +56,10 @@ public void decrement(View view){
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
-        // int coffeesOrdered = quantity;
         // display(quantity);
         // displayPrice(coffeesOrdered * 5);
-        String priceMessage = "Free, did she say, \"FREE!\""; //I used an escape sequence \" to include the quotes around free
+        int coffeesOrdered = quantity;
+        String priceMessage = "Thank you for wanting " + coffeesOrdered + " coffees, you order will be right up!"; //I used an escape sequence \" to include the quotes around free
         displayMessage(priceMessage);
     }
 
