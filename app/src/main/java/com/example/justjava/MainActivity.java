@@ -58,8 +58,9 @@ public void decrement(View view){
     public void submitOrder(View view) {
         // display(quantity);
         // displayPrice(coffeesOrdered * 5);
-        int coffeesOrdered = quantity;
-        String priceMessage = "Thank you for wanting " + coffeesOrdered + " coffees, you order will be right up!"; //I used an escape sequence \" to include the quotes around free
+        // int coffeesOrdered = quantity;
+        int price = quantity * 5;
+        String priceMessage = "Thank you for ordering " + quantity + " Coffees! \nAmount Due: $" + price; //I used an escape sequence \" to include the quotes around free
         displayMessage(priceMessage);
     }
 
