@@ -14,7 +14,6 @@
         android:textAllCaps="true"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:paddingLeft="16dp"
         android:paddingTop="16dp" />
 
     <LinearLayout
