@@ -61,7 +61,7 @@ public void decrement(View view){
         // int coffeesOrdered = quantity;
         int price = quantity * 5;
         String priceMessage = "Thank you for ordering " + quantity + " Coffees! \nAmount Due: $" + price; //I used an escape sequence \" to include the quotes around free
-        priceMessage = priceMessage + "\n\nYour order will be right up!"; //Double \n escape key for w line separation 
+        priceMessage = priceMessage + "\n\nYour order will be right up!"; //Double \n escape key for w line separation
         displayMessage(priceMessage);
     }
 
@@ -70,9 +70,9 @@ public void decrement(View view){
     /**
      * This method displays the given quantity value on the screen.
      */
-    private void displayQuantity(int number) {
+    private void displayQuantity(int numberOfCoffees) {
         TextView quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
-        quantityTextView.setText("" + number);
+        quantityTextView.setText("" + numberOfCoffees);
     }
 
     /**
