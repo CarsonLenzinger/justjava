@@ -56,26 +56,22 @@ public void decrement(View view){
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
-        // display(quantity);
-        // displayPrice(coffeesOrdered * 5);
-        // int coffeesOrdered = quantity;
-        int price = quantity * 5;
+        int price = calculatePrice();
         String priceMessage = "Thank you for ordering " + quantity + " Coffees! \nAmount Due: $" + price; //I used an escape sequence \" to include the quotes around free
         priceMessage = priceMessage + "\n\nYour order will be right up!"; //Double \n escape key for w line separation
         displayMessage(priceMessage);
 
-        calculatePrice(quantity, 10);
+        calculatePrice();
     }
 
 
     /**
      * Calculates the price of the order.
-     *
-     * @param quantity is the number of cups of coffee ordered
-     * @param pricePerCup tell us the price per cup of coffee
+     * @return total price
      */
-    private void calculatePrice() {
+    private int calculatePrice() {
         int price = quantity * 5;
+        return price;
     }
 
 
@@ -104,6 +100,7 @@ public void decrement(View view){
         priceTextView.setText(message);
 
     }
+
 
 }
 
