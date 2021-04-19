@@ -17,7 +17,7 @@ import android.widget.TextView;
  */
 public class MainActivity extends AppCompatActivity {
 
-    /**
+    /*
      * Setting Global Quantity
      */
 
@@ -74,8 +74,8 @@ public void decrement(View view){
      * @param quantity is the number of cups of coffee ordered
      * @param pricePerCup tell us the price per cup of coffee
      */
-    private void calculatePrice(int quantity, int pricePerCup) {
-        int price = quantity * pricePerCup;
+    private void calculatePrice() {
+        int price = quantity * 5;
     }
 
 
